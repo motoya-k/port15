@@ -41,6 +41,6 @@
     "jshint": "^2.13.4",
     "lint-staged": "^12.1.7",
     "prettier": "^2.5.1",
-    "sort-package-json": "^1.53.1"
+    "sort-package-json": "^2.0.0"
   }
 }

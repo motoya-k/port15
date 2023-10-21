@@ -21,7 +21,7 @@ devDependencies:
   jshint: 2.13.6
   lint-staged: 12.5.0
   prettier: 2.8.8
-  sort-package-json: 1.57.0
+  sort-package-json: 2.6.0
 lockfileVersion: 5.2
 packages:
   /@aashutoshrathi/word-wrap/1.2.6:
@@ -240,13 +240,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==
-  /@types/glob/7.2.0:
-    dependencies:
-      '@types/minimatch': 5.1.2
-      '@types/node': 17.0.15
-    dev: true
-    resolution:
-      integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==
   /@types/json-schema/7.0.14:
     dev: true
     resolution:
@@ -255,10 +248,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
-  /@types/minimatch/5.1.2:
-    dev: true
-    resolution:
-      integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==
   /@types/node/17.0.15:
     dev: true
     resolution:
@@ -841,18 +830,18 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==
-  /detect-indent/6.1.0:
+  /detect-indent/7.0.1:
     dev: true
     engines:
-      node: '>=8'
+      node: '>=12.20'
     resolution:
-      integrity: sha512-reYkTUJAZb9gUuZ2RvVCNhVHdg62RHnJ7WJl8ftMi4diZ6NWlciOzQN88pUhSELEwflJht4oQDv0F0BMlwaYtA==
-  /detect-newline/3.1.0:
+      integrity: sha512-Mc7QhQ8s+cLrnUfU/Ji94vG/r8M26m8f++vyres4ZoojaRDpZ1eSIh/EpzLNwlWuvzSZ3UbDFspjFvTDXe6e/g==
+  /detect-newline/4.0.1:
     dev: true
     engines:
-      node: '>=8'
+      node: ^12.20.0 || ^14.13.1 || >=16.0.0
     resolution:
-      integrity: sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
+      integrity: sha512-qE3Veg1YXzGHQhlA6jzebZN2qVf6NX+A7m7qlhCGG30dJixrAQhYOsJjsnBjJkCSmuOPpCk30145fr8FV0bzog==
   /dir-glob/3.0.1:
     dependencies:
       path-type: 4.0.0
@@ -1443,6 +1432,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-0gSo4ml/0j98Y3lngkFEot/zhiCeWsbYIlZ+uZOVgzLyLaUw7wxUL+nCTP0XJvJg1AXulJRI3UJi8GsbDuxdGA==
+  /get-stdin/9.0.0:
+    dev: true
+    engines:
+      node: '>=12'
+    resolution:
+      integrity: sha512-dVKBjfWisLAicarI2Sf+JuBE/DghV4UzNAVe9yhEJuzeREd3JhOTE9cUaJTeSa77fsbQUK3pcOpJfM59+VKZaA==
   /get-stream/6.0.1:
     dev: true
     engines:
@@ -1458,10 +1453,10 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-2EmdH1YvIQiZpltCNgkuiUnyukzxM/R6NDJX31Ke3BG1Nq5b0S2PhX59UKi9vZpPDQVdqn+1IcaAwnzTT5vCjw==
-  /git-hooks-list/1.0.3:
+  /git-hooks-list/3.1.0:
     dev: true
     resolution:
-      integrity: sha512-Y7wLWcrLUXwk2noSka166byGCvhMtDRpgHdzCno1UQv/n/Hegp++a2xBWJL1lJarnKD3SWaljD+0z1ztqxuKyQ==
+      integrity: sha512-LF8VeHeR7v+wAbXqfgRlTSX/1BJR9Q1vEMR8JAz1cEg6GX07+zyj3sAdDvYjj/xnlIfVuGgj4qBei1K3hKH+PA==
   /glob-parent/5.1.2:
     dependencies:
       is-glob: 4.0.3
@@ -1520,21 +1515,6 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-sFdI5LyBiNTHjRd7cGPWapiHWMOXKyuBNX/cWJ3NfzrZQVa8GI/8cofCl74AOVqq9W5kNmguTIzJ/1s2gyI9wA==
-  /globby/10.0.0:
-    dependencies:
-      '@types/glob': 7.2.0
-      array-union: 2.1.0
-      dir-glob: 3.0.1
-      fast-glob: 3.3.1
-      glob: 7.2.3
-      ignore: 5.2.4
-      merge2: 1.4.1
-      slash: 3.0.0
-    dev: true
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-3LifW9M4joGZasyYPz2A1U74zbC/45fvpXUvO/9KbSa+VV0aGZarWkfdgKyR9sExNP0t0x0ss/UMJpNpcaTspw==
   /globby/11.1.0:
     dependencies:
       array-union: 2.1.0
@@ -1548,6 +1528,18 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==
+  /globby/13.2.2:
+    dependencies:
+      dir-glob: 3.0.1
+      fast-glob: 3.3.1
+      ignore: 5.2.4
+      merge2: 1.4.1
+      slash: 4.0.0
+    dev: true
+    engines:
+      node: ^12.20.0 || ^14.13.1 || >=16.0.0
+    resolution:
+      integrity: sha512-Y1zNGV+pzQdh7H39l9zgB4PJqjRNqydvdYCDG4HFXM4XuvSaQQlEc91IU1yALL8gUTDomgBAfz3XJdmUS+oo0w==
   /gopd/1.0.1:
     dependencies:
       get-intrinsic: 1.2.2
@@ -1821,12 +1813,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-Fd4gABb+ycGAmKou8eMftCupSir5lRxqf4aD/vd0cD2qc4HL07OjCeuHMr8Ro4CoMaeCKDB0/ECBOVWjTwUvPQ==
-  /is-plain-obj/2.1.0:
+  /is-plain-obj/4.1.0:
     dev: true
     engines:
-      node: '>=8'
+      node: '>=12'
     resolution:
-      integrity: sha512-YWnfyRwxL/+SsrWYfOpUtz5b3YD+nyfkHvjbcanzk8zgyO4ASD67uVMRt8k5bM4lLMDnXfriRhOpemw+NfT1eA==
+      integrity: sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==
   /is-regex/1.1.4:
     dependencies:
       call-bind: 1.0.5
@@ -2651,6 +2643,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
+  /slash/4.0.0:
+    dev: true
+    engines:
+      node: '>=12'
+    resolution:
+      integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==
   /slice-ansi/3.0.0:
     dependencies:
       ansi-styles: 4.3.0
@@ -2684,18 +2682,19 @@ packages:
     dev: true
     resolution:
       integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==
-  /sort-package-json/1.57.0:
+  /sort-package-json/2.6.0:
     dependencies:
-      detect-indent: 6.1.0
-      detect-newline: 3.1.0
-      git-hooks-list: 1.0.3
-      globby: 10.0.0
-      is-plain-obj: 2.1.0
+      detect-indent: 7.0.1
+      detect-newline: 4.0.1
+      get-stdin: 9.0.0
+      git-hooks-list: 3.1.0
+      globby: 13.2.2
+      is-plain-obj: 4.1.0
       sort-object-keys: 1.1.3
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-FYsjYn2dHTRb41wqnv+uEqCUvBpK3jZcTp9rbz2qDTmel7Pmdtf+i2rLaaPMRZeSVM60V3Se31GyWFpmKs4Q5Q==
+      integrity: sha512-XSQ+lY9bAYA8ZsoChcEoPlgcSMaheziEp1beox1JVxy1SV4F2jSq9+h2rJ+3mC/Dhu9Ius1DLnInD5AWcsDXZw==
   /source-map-js/1.0.2:
     dev: false
     engines:
@@ -3122,5 +3121,5 @@ specifiers:
   prettier: ^2.5.1
   react: ^18.2.0
   react-dom: ^18.2.0
-  sort-package-json: ^1.53.1
+  sort-package-json: ^2.0.0
   typescript: 4.5.5
