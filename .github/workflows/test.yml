@@ -1,0 +1,16 @@
+name: Test
+
+on:
+    push:
+        branches:
+        - main
+
+jobs:
+  clone-my-repo:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: SayHello
+        run: echo "Hello World from ${{ github.repository }}"
