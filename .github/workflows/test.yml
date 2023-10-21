@@ -11,6 +11,6 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: SayHello
         run: echo "Hello World from ${{ github.repository }}"
