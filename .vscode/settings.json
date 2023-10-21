@@ -3,6 +3,7 @@
         "browserslist",
         "Motoya",
         "peaceiris",
+        "tailwindcss",
         "unshallow"
     ]
 }
