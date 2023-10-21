@@ -14,7 +14,7 @@ devDependencies:
   eslint: 8.52.0
   eslint-config-next: 12.3.4_eslint@8.52.0+typescript@4.9.5
   eslint-config-prettier: 9.0.0_eslint@8.52.0
-  eslint-import-resolver-typescript: 2.7.1_85c29ca42413747c37272c2affd0a22d
+  eslint-import-resolver-typescript: 3.6.1_85c29ca42413747c37272c2affd0a22d
   eslint-plugin-import: 2.28.1_eslint@8.52.0
   eslint-plugin-strict-dependencies: 1.2.3
   husky: 7.0.4
@@ -875,6 +875,15 @@ packages:
     dev: true
     resolution:
       integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==
+  /enhanced-resolve/5.15.0:
+    dependencies:
+      graceful-fs: 4.2.11
+      tapable: 2.2.1
+    dev: true
+    engines:
+      node: '>=10.13.0'
+    resolution:
+      integrity: sha512-LXYT42KJ7lpIKECr2mAXIaMldcNCh/7E0KBKOu4KSfkHmP+mZmSs+8V5gBAqisWBy0OO4W5Oyys0GO1Y8KtdKg==
   /entities/1.0.0:
     dev: true
     resolution:
@@ -1036,6 +1045,25 @@ packages:
       eslint-plugin-import: '*'
     resolution:
       integrity: sha512-00UbgGwV8bSgUv34igBDbTOtKhqoRMy9bFjNehT40bXg6585PNIct8HhXZ0SybqB9rWtXj9crcku8ndDn/gIqQ==
+  /eslint-import-resolver-typescript/3.6.1_85c29ca42413747c37272c2affd0a22d:
+    dependencies:
+      debug: 4.3.4
+      enhanced-resolve: 5.15.0
+      eslint: 8.52.0
+      eslint-module-utils: 2.8.0_eslint@8.52.0
+      eslint-plugin-import: 2.28.1_eslint@8.52.0
+      fast-glob: 3.3.1
+      get-tsconfig: 4.7.2
+      is-core-module: 2.13.1
+      is-glob: 4.0.3
+    dev: true
+    engines:
+      node: ^14.18.0 || >=16.0.0
+    peerDependencies:
+      eslint: '*'
+      eslint-plugin-import: '*'
+    resolution:
+      integrity: sha512-xgdptdoi5W3niYeuQxKmzVDTATvLYqhpwmykwsh7f6HIOStGWEIL9iqZgQDF9u9OEzrRwR8no5q2VT+bjAujTg==
   /eslint-module-utils/2.8.0_eslint@8.52.0:
     dependencies:
       debug: 3.2.7
@@ -1425,6 +1453,12 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-2EmdH1YvIQiZpltCNgkuiUnyukzxM/R6NDJX31Ke3BG1Nq5b0S2PhX59UKi9vZpPDQVdqn+1IcaAwnzTT5vCjw==
+  /get-tsconfig/4.7.2:
+    dependencies:
+      resolve-pkg-maps: 1.0.0
+    dev: true
+    resolution:
+      integrity: sha512-wuMsz4leaj5hbGgg4IvDU0bqJagpftG5l5cXIAvo8uZrqn0NJqwtfupTN00VnkQJPcIRrxYrm1Ue24btpCha2A==
   /git-hooks-list/1.0.3:
     dev: true
     resolution:
@@ -1522,7 +1556,6 @@ packages:
     resolution:
       integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==
   /graceful-fs/4.2.11:
-    dev: false
     resolution:
       integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
   /graphemer/1.4.0:
@@ -2450,6 +2483,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
+  /resolve-pkg-maps/1.0.0:
+    dev: true
+    resolution:
+      integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==
   /resolve/1.22.8:
     dependencies:
       is-core-module: 2.13.1
@@ -2788,6 +2825,12 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+  /tapable/2.2.1:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
   /text-table/0.2.0:
     dev: true
     resolution:
@@ -3019,7 +3062,7 @@ specifiers:
   eslint: ^8.7.0
   eslint-config-next: ^12.0.10
   eslint-config-prettier: ^9.0.0
-  eslint-import-resolver-typescript: ^2.5.0
+  eslint-import-resolver-typescript: ^3.0.0
   eslint-plugin-import: ^2.25.4
   eslint-plugin-strict-dependencies: ^1.0.0
   gray-matter: ^4.0.3
