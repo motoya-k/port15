@@ -16,7 +16,7 @@ devDependencies:
   eslint-config-prettier: 9.0.0_eslint@8.52.0
   eslint-import-resolver-typescript: 2.7.1_85c29ca42413747c37272c2affd0a22d
   eslint-plugin-import: 2.28.1_eslint@8.52.0
-  eslint-plugin-strict-dependencies: 0.0.2
+  eslint-plugin-strict-dependencies: 1.2.3
   husky: 7.0.4
   jshint: 2.13.6
   lint-staged: 15.0.2
@@ -1139,10 +1139,15 @@ packages:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
     resolution:
       integrity: sha512-73QQMKALArI8/7xGLNI/3LylrEYrlKZSb5C9+q3OtOewTnMQi5cT+aE9E41sLCmli3I9PGGmD1yiZydyo4FEPw==
-  /eslint-plugin-strict-dependencies/0.0.2:
+  /eslint-plugin-strict-dependencies/1.2.3:
+    dependencies:
+      is-glob: 4.0.3
+      micromatch: 4.0.5
+      normalize-path: 3.0.0
+      require-strip-json-comments: 2.0.0
     dev: true
     resolution:
-      integrity: sha512-D91d13/PvWFN5e1Mxv7+FNNRtV7gNct9OIyZNQM+bVTV1FeLeqITnSOkGSIdwuRgpTOHfYBQOs2rSolTyECCPQ==
+      integrity: sha512-Ziz3wk/rETLNbtXwnHlC32VkPGkLnvRbHDSxunAXbL/WEpQRS7KkxG3TdXYkrQ+CIz67+e4uzjQsW0eF48ZTuQ==
   /eslint-scope/5.1.1:
     dependencies:
       esrecurse: 4.3.0
@@ -2433,6 +2438,12 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-sy6TXMN+hnP/wMy+ISxg3krXx7BAtWVO4UouuCN/ziM9UEne0euamVNafDfvC83bRNr95y0V5iijeDQFUNpvrg==
+  /require-strip-json-comments/2.0.0:
+    dependencies:
+      strip-json-comments: 3.1.1
+    dev: true
+    resolution:
+      integrity: sha512-Pta3KVBaVZ9DHMoOGRd+3PEc/EFZAQ1JVHQpKZfPo018fdT9iEsyPBzqNAgJAzKMF4kbr5G7GaqP0+UOwnGfPw==
   /resolve-from/4.0.0:
     dev: true
     engines:
@@ -3010,7 +3021,7 @@ specifiers:
   eslint-config-prettier: ^9.0.0
   eslint-import-resolver-typescript: ^2.5.0
   eslint-plugin-import: ^2.25.4
-  eslint-plugin-strict-dependencies: ^0.0.2
+  eslint-plugin-strict-dependencies: ^1.0.0
   gray-matter: ^4.0.3
   husky: ^7.0.4
   jshint: ^2.13.4
