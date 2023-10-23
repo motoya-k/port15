@@ -1,6 +1,6 @@
+import '@/styles/globals.css'
 import { Metadata } from 'next'
 import { ReactNode } from "react"
-import './globals.css'
 
 // export const dynamic = 'auto'
 // export const dynamicParams = false

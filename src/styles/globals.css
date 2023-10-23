@@ -1,6 +1,9 @@
+@import "../components/shared/shared.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 * {
   box-sizing: border-box;

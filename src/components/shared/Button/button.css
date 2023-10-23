@@ -1,0 +1,114 @@
+@layer components {
+    .button.primary {
+        --base-main-color: theme(colors.primary.800);
+        --base-contrast-color: theme(colors.primary.100);
+        --base-text-color: theme(colors.neutral.100);
+    }
+    .button.secondary {
+        --base-main-color: theme(colors.secondary.800);
+        --base-contrast-color: theme(colors.secondary.100);
+        --base-text-color: theme(colors.neutral.100);
+    }
+    .button.success {
+        --base-main-color: theme(colors.success.800);
+        --base-contrast-color: theme(colors.success.100);
+        --base-text-color: theme(colors.neutral.100);
+    }
+    .button.error {
+        --base-main-color: theme(colors.error.800);
+        --base-contrast-color: theme(colors.error.100);
+        --base-text-color: theme(colors.neutral.100);
+    }
+    .button.info {
+        --base-main-color: theme(colors.info.800);
+        --base-contrast-color: theme(colors.info.100);
+        --base-text-color: theme(colors.neutral.100);
+    }
+    .button.warning {
+        --base-main-color: theme(colors.warning.800);
+        --base-contrast-color: theme(colors.warning.100);
+        --base-text-color: theme(colors.neutral.100);
+    }
+    .button.contained {
+        --text-color: var(--base-text-color);
+        --bg-color: var(--base-main-color);
+        --bd-color: transparent;
+    }
+    .button.outlined {
+        --text-color: theme(colors.neutral.800);
+        --bg-color: var(--base-contrast-color);
+        --bg-hover-color: lighten(var(--base-contrast-color), 10%);
+        --bd-color: var(--base-main-color);
+    }
+    .button.text {
+        --text-color: theme(colors.neutral.800);
+        /* --bg-color: var(--base-contrast-color); */
+        --bg-color: theme(colors.neutral.000);
+        --bg-hover-color: lighten(var(--base-contrast-color), 10%);
+        --bd-color: transparent;
+    }
+    .button.small {
+        width: theme(width.8);
+    }
+    .button.medium {
+        width: theme(width.20);
+    }
+    .button.large {
+        width: theme(width.32);
+    }
+    .button.full {
+        width: 100%;
+    }
+    .button {
+        appearance: none;
+        line-height: theme(lineHeight.4);
+        padding: theme(space.2) theme(space.4);
+        position: relative;
+        background-color: var(--bg-color);
+        border: theme(borderWidth.DEFAULT) solid var(--bd-color);
+        border-radius: theme(borderRadius.DEFAULT);
+        box-sizing: border-box;
+        color: var(--text-color);
+        cursor: pointer;
+        display: inline-block;
+        transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        white-space: nowrap;
+        word-wrap: break-word;
+        overflow: hidden;
+    }
+    .button > .spinner {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); 
+    }
+    .button > .text.loading {
+        color: transparent;
+    }
+    .button:hover {
+        filter: brightness(1.2);
+    }
+    .button:disabled {
+        background-color: theme(colors.neutral.300);
+        border-color: rgba(27, 31, 35, 0.15);
+        color: theme(colors.neutral.500);
+        cursor: default;
+    }
+    .button:active {
+        transition: none 0s;
+    }
+    .button:focus {
+        outline: 1px transparent;
+    }
+    .button:before {
+        display: none;
+    }
+    .button:-webkit-details-marker {
+        display: none;
+    }
+}
+
