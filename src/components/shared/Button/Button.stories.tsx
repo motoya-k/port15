@@ -14,7 +14,6 @@ export default meta;
 
 const Template: StoryFn<typeof Button> = (props: Props) => {
   return <div>
-    <h1>Buttons</h1>
     <div className='m-4 flex justify-between'>
       <Button {...props} color="primary">button</Button>
       <Button {...props} color="primary" variant="outlined">button</Button>

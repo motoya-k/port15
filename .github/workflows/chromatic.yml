@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'src/**/components/**.stories.{.js,.jsx,.ts,.tsx}'
+      - 'src/components/**/**.stories{.js,.jsx,.ts,.tsx}'
   pull_request:
     types: [opened, synchronize]
 
