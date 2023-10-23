@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'src/components/**/**.stories{.js,.jsx,.ts,.tsx}'
   pull_request:
     types: [opened, synchronize]
 
