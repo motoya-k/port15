@@ -44,9 +44,6 @@ const Template: StoryFn<typeof Button> = (props: Props) => {
       <Button {...props} color="warning" variant="outlined">button</Button>
       <Button {...props} color="warning" variant="text">button</Button>
     </div>
-    <div>
-      <Button {...props} color='primary' style={{ width: "100%" }}>width 100%</Button>
-    </div>
   </div>
 }
 

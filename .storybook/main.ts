@@ -8,11 +8,12 @@ module.exports = {
         "../src/components/**/*.stories.@(js|jsx|ts|tsx)",
     ],
     addons: [
-        "@storybook/addon-links",
-        "@storybook/addon-essentials",
-        "@storybook/addon-controls",
-        "@storybook/addon-styling-webpack",
+        "@storybook/addon-docs",
     ],
+    docs: {
+        autodocs: 'tag',
+        defaultName: 'Documentation',
+    },
     webpackFinal: async (config) => {
         return config;
     },
