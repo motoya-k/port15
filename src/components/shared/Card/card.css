@@ -1,0 +1,7 @@
+@layer components {
+    .card {
+        border: 1px solid theme(colors.neutral.200);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+    }
+}

@@ -1,9 +1,10 @@
 {
   "name": "src",
+  "version": "",
   "private": true,
   "scripts": {
     "build": "next build",
-    "start": "next start",
+    "build-storybook": "storybook build",
     "dev": "next dev",
     "export": "next export",
     "format": "sort-package-json package.json",
@@ -11,14 +12,21 @@
     "format:ts": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'",
     "lint": "next lint --dir src",
     "lint:fix": "next lint --dir src --fix",
-    "storybook": "storybook dev",
-    "build-storybook": "storybook build"
+    "start": "next start",
+    "storybook": "storybook dev"
   },
   "lint-staged": {
     "*.json": "yarn format",
     "*.{js,ts,tsx}": "eslint"
   },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  },
   "dependencies": {
+    "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-switch": "^1.0.3",
     "gray-matter": "^4.0.3",
     "next": "13.5.6",
     "react": "^18.2.0",
@@ -58,12 +66,6 @@
     "storybook": "^7.5.1",
     "tailwindcss": "^3.3.3"
   },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
-  },
-  "version": "",
   "readme": "ERROR: No README data found!",
   "_id": "src@"
 }

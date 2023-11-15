@@ -36,7 +36,7 @@
     }
     .button.outlined {
         --text-color: theme(colors.neutral.800);
-        --bg-color: var(--base-contrast-color);
+        --bg-color: theme(colors.neutral.000);
         --bg-hover-color: lighten(var(--base-contrast-color), 10%);
         --bd-color: var(--base-main-color);
     }
@@ -60,6 +60,7 @@
         width: 100%;
     }
     .button {
+        font-size: theme(fontSize.sm);
         appearance: none;
         line-height: theme(lineHeight.4);
         padding: theme(space.2) theme(space.4);
