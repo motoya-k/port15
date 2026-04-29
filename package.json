@@ -57,7 +57,7 @@
     "eslint-plugin-strict-dependencies": "^1.2.3",
     "husky": "^7.0.4",
     "jshint": "^2.13.6",
-    "lint-staged": "^15.0.2",
+    "lint-staged": "^16.0.0",
     "npm": "^10.2.1",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
