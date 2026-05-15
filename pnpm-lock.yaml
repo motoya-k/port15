@@ -19,7 +19,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.62.0_ba5c50bde5054d918c93d920073c57b9
   '@typescript-eslint/parser': 5.62.0_eslint@8.57.1+typescript@4.9.5
   autoprefixer: 10.4.21_postcss@8.5.6
-  chromatic: 7.6.0
+  chromatic: 16.10.1
   cssnano: 6.1.2_postcss@8.5.6
   eslint: 8.57.1
   eslint-config-next: 12.3.7_eslint@8.57.1+typescript@4.9.5
@@ -3821,11 +3821,24 @@ packages:
       node: '>= 14.16.0'
     resolution:
       integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==
-  /chromatic/7.6.0:
+  /chromatic/16.10.1:
+    dependencies:
+      semver: 7.7.3
     dev: true
     hasBin: true
+    peerDependencies:
+      '@chromatic-com/cypress': ^0.*.* || ^1.0.0
+      '@chromatic-com/playwright': ^0.*.* || ^1.0.0
+      '@chromatic-com/vitest': ^0.*.* || ^1.0.0
+    peerDependenciesMeta:
+      '@chromatic-com/cypress':
+        optional: true
+      '@chromatic-com/playwright':
+        optional: true
+      '@chromatic-com/vitest':
+        optional: true
     resolution:
-      integrity: sha512-4MwlX8EDMyfQKf1NXTdUhJ2b0EYueByaVrF75pdFaOzHH7n3OhzknmQYbUSegLiFhKvHuvM8nZvf9SCajO+Cow==
+      integrity: sha512-u3RusLCCJxN8IZV3qLh6RTpo6Mu5A77bpOTAGJL5A+v2to9fsVKcK3j0GvGjPQeJJPNSI8rAI5c4U9ukbGiZJQ==
   /chrome-trace-event/1.0.4:
     dev: true
     engines:
@@ -9570,7 +9583,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.62.0
   '@typescript-eslint/parser': ^5.62.0
   autoprefixer: ^10.4.16
-  chromatic: ^7.4.0
+  chromatic: ^16.0.0
   cssnano: ^6.0.1
   eslint: ^8.52.0
   eslint-config-next: ^12.3.4
