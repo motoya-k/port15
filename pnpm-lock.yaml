@@ -31,7 +31,7 @@ devDependencies:
   husky: 7.0.4
   jshint: 2.13.6
   lint-staged: 15.5.2
-  npm: 10.9.4
+  npm: 11.18.0
   postcss: 8.5.6
   prettier: 3.6.2
   prettier-plugin-tailwindcss: 0.5.14_prettier@3.6.2
@@ -6803,13 +6803,14 @@ packages:
       node: ^12.20.0 || ^14.13.1 || >=16.0.0
     resolution:
       integrity: sha512-ppwTtiJZq0O/ai0z7yfudtBpWIoxM8yE6nHi1X47eFR2EWORqfbu6CnPlNsjeN683eT0qG6H/Pyf9fCcvjnnnQ==
-  /npm/10.9.4:
+  /npm/11.18.0:
     bundledDependencies:
       - '@isaacs/string-locale-compare'
       - '@npmcli/arborist'
       - '@npmcli/config'
       - '@npmcli/fs'
       - '@npmcli/map-workspaces'
+      - '@npmcli/metavuln-calculator'
       - '@npmcli/package-json'
       - '@npmcli/promise-spawn'
       - '@npmcli/redact'
@@ -6820,7 +6821,6 @@ packages:
       - cacache
       - chalk
       - ci-info
-      - cli-columns
       - fastest-levenshtein
       - fs-minipass
       - glob
@@ -6834,7 +6834,6 @@ packages:
       - libnpmdiff
       - libnpmexec
       - libnpmfund
-      - libnpmhook
       - libnpmorg
       - libnpmpack
       - libnpmpublish
@@ -6848,7 +6847,6 @@ packages:
       - ms
       - node-gyp
       - nopt
-      - normalize-package-data
       - npm-audit-report
       - npm-install-checks
       - npm-package-arg
@@ -6872,13 +6870,12 @@ packages:
       - treeverse
       - validate-npm-package-name
       - which
-      - write-file-atomic
     dev: true
     engines:
-      node: ^18.17.0 || >=20.5.0
+      node: ^20.17.0 || >=22.9.0
     hasBin: true
     resolution:
-      integrity: sha512-OnUG836FwboQIbqtefDNlyR0gTHzIfwRfE3DuiNewBvnMnWEpB0VEXwBlFVgqpNzIgYo/MHh3d2Hel/pszapAA==
+      integrity: sha512-T67M4L5wNm0cZ7EBLErcEkY1SmzEW/WJ+SADBzsFUY1UdAPfFHXFQtZ6SEXiK0+vzXysCvAsepbMaBTwnrAD+w==
   /nth-check/2.1.1:
     dependencies:
       boolbase: 1.0.0
@@ -9584,7 +9581,7 @@ specifiers:
   jshint: ^2.13.6
   lint-staged: ^15.0.2
   next: 13.5.6
-  npm: ^10.2.1
+  npm: ^11.0.0
   postcss: ^8.4.31
   prettier: ^3.0.3
   prettier-plugin-tailwindcss: ^0.5.6
